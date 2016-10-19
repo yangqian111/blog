@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5628CEEF1DB70706000817FC /* RoundHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5628CEEE1DB70706000817FC /* RoundHeadView.m */; };
 		5634B6511DB63B2C00B3F156 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5634B6501DB63B2C00B3F156 /* main.m */; };
 		5634B6541DB63B2C00B3F156 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5634B6531DB63B2C00B3F156 /* AppDelegate.m */; };
 		5634B6571DB63B2C00B3F156 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5634B6561DB63B2C00B3F156 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5628CEED1DB70706000817FC /* RoundHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundHeadView.h; sourceTree = "<group>"; };
+		5628CEEE1DB70706000817FC /* RoundHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundHeadView.m; sourceTree = "<group>"; };
 		5634B64C1DB63B2C00B3F156 /* MakeRoundTextHead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeRoundTextHead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5634B6501DB63B2C00B3F156 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5634B6521DB63B2C00B3F156 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 			children = (
 				5634B6521DB63B2C00B3F156 /* AppDelegate.h */,
 				5634B6531DB63B2C00B3F156 /* AppDelegate.m */,
+				5628CEED1DB70706000817FC /* RoundHeadView.h */,
+				5628CEEE1DB70706000817FC /* RoundHeadView.m */,
 				5634B6551DB63B2C00B3F156 /* ViewController.h */,
 				5634B6561DB63B2C00B3F156 /* ViewController.m */,
 				5634B6581DB63B2C00B3F156 /* Main.storyboard */,
@@ -279,6 +284,7 @@
 				5634B6571DB63B2C00B3F156 /* ViewController.m in Sources */,
 				5634B6541DB63B2C00B3F156 /* AppDelegate.m in Sources */,
 				5634B6511DB63B2C00B3F156 /* main.m in Sources */,
+				5628CEEF1DB70706000817FC /* RoundHeadView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +435,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 46FJ5HKR96;
 				INFOPLIST_FILE = MakeRoundTextHead/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangqian.roundHead.MakeRoundTextHead;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,6 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 46FJ5HKR96;
 				INFOPLIST_FILE = MakeRoundTextHead/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangqian.roundHead.MakeRoundTextHead;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +524,7 @@
 				5634B67B1DB63B2C00B3F156 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5634B67C1DB63B2C00B3F156 /* Build configuration list for PBXNativeTarget "MakeRoundTextHeadTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +533,7 @@
 				5634B67E1DB63B2C00B3F156 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5634B67F1DB63B2C00B3F156 /* Build configuration list for PBXNativeTarget "MakeRoundTextHeadUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +542,7 @@
 				5634B6811DB63B2C00B3F156 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
