@@ -81,8 +81,8 @@
         UITapGestureRecognizer *photoTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(photoTap:)];
         UITapGestureRecognizer *zonmTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(zonmTap:)];
         zonmTap.numberOfTapsRequired = 2;
-        [photo addGestureRecognizer:photoTap];
-        [photo addGestureRecognizer:zonmTap];
+        [smallScrollView addGestureRecognizer:photoTap];
+        [smallScrollView addGestureRecognizer:zonmTap];
         [photoTap requireGestureRecognizerToFail:zonmTap];
         
         [smallScrollView addSubview:photo];
@@ -255,8 +255,14 @@
 }
 
 -(void)photoTap:(UITapGestureRecognizer *)photoTap{
-    Photo *photo = (Photo *)photoTap.view;
-    UIScrollView *smallScrollView = (UIScrollView *)photo.superview;
+    UIScrollView *smallScrollView = (UIScrollView *)photoTap.view;
+    Photo *photo = nil;
+    for (UIView *subview in smallScrollView.subviews) {
+        if ([subview isKindOfClass:[Photo class]]) {
+            photo = (Photo *)subview;
+        }
+    }
+//    UIScrollView *smallScrollView = (UIScrollView *)photo.superview;
     smallScrollView.zoomScale = 1.0;
     CGRect frame = [self.originRects[photo.tag] CGRectValue];
     [UIView animateWithDuration:0.4 animations:^{
@@ -271,8 +277,8 @@
 
 -(void)zonmTap:(UITapGestureRecognizer *)zonmTap{
     [UIView animateWithDuration:0.3 animations:^{
-        UIScrollView *smallScrollView = (UIScrollView *)zonmTap.view.superview;
-        smallScrollView.zoomScale = 3.0;
+        UIScrollView *smallScrollView = (UIScrollView *)zonmTap.view;
+        smallScrollView.zoomScale = 2.0;
     }];
 }
 

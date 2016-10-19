@@ -632,6 +632,7 @@
 				56F2E5561DB75DE800569435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56F2E5571DB75DE800569435 /* Build configuration list for PBXNativeTarget "iOS图片查看器Tests" */ = {
 			isa = XCConfigurationList;
@@ -640,6 +641,7 @@
 				56F2E5591DB75DE800569435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56F2E55A1DB75DE800569435 /* Build configuration list for PBXNativeTarget "iOS图片查看器UITests" */ = {
 			isa = XCConfigurationList;
@@ -648,6 +650,7 @@
 				56F2E55C1DB75DE800569435 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
