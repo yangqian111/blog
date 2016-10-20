@@ -11,7 +11,7 @@
 #import "Photo.h"
 
 #define YQKeyWindow [UIApplication sharedApplication].keyWindow
-#define bigScrollVIewTag 101
+#define OutScrollVIewTag 101
 #define SCREEN_WIDTH                    [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT                   [[UIScreen mainScreen] bounds].size.height
 
@@ -19,7 +19,7 @@
 /**
  *  底层滑动的scrollview
  */
-@property (nonatomic,weak) UIScrollView *bigScrollView;
+@property (nonatomic,weak) UIScrollView *outScrollView;
 /**
  *  黑色背景view
  */
@@ -28,10 +28,25 @@
  *  原始frame数组
  */
 @property (nonatomic,strong) NSMutableArray *originRects;
+/**
+ *  存放图片的数组
+ */
+@property (nonatomic,strong) NSArray *photos;
+/**
+ *  当前的index
+ */
+@property (nonatomic,assign) NSInteger currentIndex;
 
 @end
 
 @implementation PhotoBrower
+
++ (void)showWithPhotos:(NSArray *)photos index:(NSInteger)index{
+    PhotoBrower *brower = [[PhotoBrower alloc] init];
+    brower.photos = [photos copy];
+    brower.currentIndex = 0;
+    [brower show];
+}
 
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
@@ -55,38 +70,38 @@
     [self setupOriginRects];
     
     //3.设置滚动距离
-    self.bigScrollView.contentSize = CGSizeMake(SCREEN_WIDTH*self.photos.count, 0);
-    self.bigScrollView.contentOffset = CGPointMake(SCREEN_WIDTH*self.currentIndex, 0);
+    self.outScrollView.contentSize = CGSizeMake(SCREEN_WIDTH*self.photos.count, 0);
+    self.outScrollView.contentOffset = CGPointMake(SCREEN_WIDTH*self.currentIndex, 0);
     
     //4.创建子视图
-    [self setupSmallScrollViews];
+    [self setupphotoScrollViews];
 }
 
 /**
  创建每一张照片 每一张照片都是一个scrollview
  scrollview可缩放
  */
--(void)setupSmallScrollViews{
+-(void)setupphotoScrollViews{
     for (int i=0; i<self.photos.count; i++) {
-        UIScrollView *smallScrollView = [[UIScrollView alloc] init];
-        smallScrollView.backgroundColor = [UIColor clearColor];
-        smallScrollView.tag = i;
-        smallScrollView.frame = CGRectMake(SCREEN_WIDTH*i, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-        smallScrollView.delegate = self;
-        smallScrollView.maximumZoomScale=3.0;
-        smallScrollView.minimumZoomScale=1;
-        [self.bigScrollView addSubview:smallScrollView];
+        UIScrollView *photoScrollView = [[UIScrollView alloc] init];
+        photoScrollView.backgroundColor = [UIColor clearColor];
+        photoScrollView.tag = i;
+        photoScrollView.frame = CGRectMake(SCREEN_WIDTH*i, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        photoScrollView.delegate = self;
+        photoScrollView.maximumZoomScale=2.0;
+        photoScrollView.minimumZoomScale=1;
+        [self.outScrollView addSubview:photoScrollView];
         
         Photo *photo = self.photos[i];
         UITapGestureRecognizer *photoTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(photoTap:)];
         UITapGestureRecognizer *zonmTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(zonmTap:)];
         zonmTap.numberOfTapsRequired = 2;
-        [smallScrollView addGestureRecognizer:photoTap];
-        [smallScrollView addGestureRecognizer:zonmTap];
+        [photoScrollView addGestureRecognizer:photoTap];
+        [photoScrollView addGestureRecognizer:zonmTap];
         [photoTap requireGestureRecognizerToFail:zonmTap];
         
-        [smallScrollView addSubview:photo];
-        //有本地高清大图
+        [photoScrollView addSubview:photo];
+        //有本地高清大图 直接大图显示出来就不需要再次访问网络
         if (photo.fullImage) {
             photo.image = photo.fullImage;
             photo.frame = [self.originRects[i] CGRectValue];
@@ -102,54 +117,29 @@
                 photo.bounds = CGRectMake(0, 0, bigW, bigH);
                 photo.center = CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
             }];
-            
             return;
         }
-        
         NSURL *fullImgUrl = [NSURL URLWithString:photo.fullImgUrl];
-        
-        [[SDImageCache sharedImageCache] queryDiskCacheForKey:photo.fullImgUrl done:^(UIImage *image, SDImageCacheType cacheType) {
-            
-            if (image==nil) {
-                //                loop.hidden = NO;
-            }
-            
-        }];
         [photo sd_setImageWithURL:fullImgUrl placeholderImage:nil options:SDWebImageRetryFailed | SDWebImageLowPriority progress:^(NSInteger receivedSize, NSInteger expectedSize) {
-            
-            
-            
+            //开始下载  这里后面会做一些效果 比如下载的进度条  一个load
         } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-            
-            //            [loop removeFromSuperview];
-            
             if (image!=nil) {
-                
                 photo.frame = [self.originRects[i] CGRectValue];
-                
+                //如果是网上下载下来的图片  那么改变一下photo的位置  后面做动画 会和已有缓存的图片显示效果不一样
                 if (cacheType==SDImageCacheTypeNone) {
-                    
                     photo.frame = CGRectMake(0, 0, SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
                     photo.center = CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
-                    
                 }
-                
                 [UIView animateWithDuration:0.3 animations:^{
-                    
                     self.blackView.alpha = 1.0;
-                    
                     CGFloat ratio = (double)photo.image.size.height/(double)photo.image.size.width;
-                    
                     CGFloat bigW = SCREEN_WIDTH;
                     CGFloat bigH = SCREEN_WIDTH*ratio;
-                    
                     photo.bounds = CGRectMake(0, 0, bigW, bigH);
                     photo.center = CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
                 }];
             }else{
-                
-                //                UITapGestureRecognizer *loopTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(loopTap)];
-                //                [loop addGestureRecognizer:loopTap];
+               //下载错误 提示一个 错误需要
             }
         }];
     }
@@ -186,16 +176,16 @@
  创建外部的  滑动的scrollview
  */
 - (void)createOuterScrollView{
-    UIScrollView *bigScrollView = [[UIScrollView alloc] init];
-    bigScrollView.backgroundColor = [UIColor clearColor];
-    bigScrollView.delegate = self;
-    bigScrollView.tag = bigScrollVIewTag;
-    bigScrollView.pagingEnabled = YES;
-    bigScrollView.bounces = YES;
-    bigScrollView.showsHorizontalScrollIndicator = NO;
-    bigScrollView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-    [self addSubview:bigScrollView];
-    self.bigScrollView = bigScrollView;
+    UIScrollView *outScrollView = [[UIScrollView alloc] init];
+    outScrollView.backgroundColor = [UIColor clearColor];
+    outScrollView.delegate = self;//这个地方的代理主要是做外部Scroll滑动的时候 处理
+    outScrollView.tag = OutScrollVIewTag;//用于判断处理点击事件和缩放事件时判断是否是外部的UIScrollView
+    outScrollView.pagingEnabled = YES;
+    outScrollView.bounces = YES;
+    outScrollView.showsHorizontalScrollIndicator = NO;
+    outScrollView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+    [self addSubview:outScrollView];
+    self.outScrollView = outScrollView;
 }
 
 #pragma mark UIScrollViewDelegate
@@ -207,7 +197,7 @@
  @return 需要缩放的view
  */
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
-    if (scrollView.tag == bigScrollVIewTag) {
+    if (scrollView.tag == OutScrollVIewTag) {
         return nil;
     }
     Photo *photo = self.photos[scrollView.tag];
@@ -220,7 +210,7 @@
  @param scrollView 当前的小scrollview 装图片的
  */
 -(void)scrollViewDidZoom:(UIScrollView *)scrollView{
-    if (scrollView.tag==bigScrollVIewTag) {
+    if (scrollView.tag==OutScrollVIewTag) {
         return;
     }
     Photo *photo = (Photo *)self.photos[scrollView.tag];
@@ -237,11 +227,11 @@
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     int currentIndex = scrollView.contentOffset.x/SCREEN_WIDTH;
-    if (self.currentIndex!=currentIndex && scrollView.tag==bigScrollVIewTag) {
+    if (self.currentIndex!=currentIndex && scrollView.tag==OutScrollVIewTag) {
         self.currentIndex = currentIndex;
         for (UIView *view in scrollView.subviews) {
             if ([view isKindOfClass:[UIScrollView class]]) {
-                UIScrollView *scrollView = (UIScrollView *)view;
+                UIScrollView *scrollView = (UIScrollView *)view;//处于缩放时  滑动  恢复
                 scrollView.zoomScale = 1.0;
             }
         }
@@ -255,15 +245,14 @@
 }
 
 -(void)photoTap:(UITapGestureRecognizer *)photoTap{
-    UIScrollView *smallScrollView = (UIScrollView *)photoTap.view;
+    UIScrollView *photoScrollView = (UIScrollView *)photoTap.view;
     Photo *photo = nil;
-    for (UIView *subview in smallScrollView.subviews) {
+    for (UIView *subview in photoScrollView.subviews) {
         if ([subview isKindOfClass:[Photo class]]) {
             photo = (Photo *)subview;
         }
     }
-//    UIScrollView *smallScrollView = (UIScrollView *)photo.superview;
-    smallScrollView.zoomScale = 1.0;
+    photoScrollView.zoomScale = 1.0;
     CGRect frame = [self.originRects[photo.tag] CGRectValue];
     [UIView animateWithDuration:0.4 animations:^{
         photo.frame = frame;
@@ -277,8 +266,8 @@
 
 -(void)zonmTap:(UITapGestureRecognizer *)zonmTap{
     [UIView animateWithDuration:0.3 animations:^{
-        UIScrollView *smallScrollView = (UIScrollView *)zonmTap.view;
-        smallScrollView.zoomScale = 2.0;
+        UIScrollView *photoScrollView = (UIScrollView *)zonmTap.view;
+        photoScrollView.zoomScale = 2.0;
     }];
 }
 

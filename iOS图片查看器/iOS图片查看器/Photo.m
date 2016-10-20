@@ -12,28 +12,18 @@
 
 
 /**
- 设置图片拉伸方式
- 设置图片可点击
+ 将图片的一些实例
 
- @param frame 尺寸
+ @param thumbnail  含缩略图的view
+ @param fullImage  高清大图
+ @param fullImgUrl 高清大图网络地址
 
- @return 实例
+ @return 照片model实例
  */
-//- (instancetype)initWithFrame:(CGRect)frame
-//{
-//    self = [super initWithFrame:frame];
-//    if (self) {
-//        
-//        self.clipsToBounds = YES;
-//        self.userInteractionEnabled  = YES;
-//        self.contentMode = UIViewContentModeScaleAspectFill;
-//    }
-//    return self;
-//}
-
 - (instancetype)initWithThumbnail:(UIImageView *)thumbnail fullImage:(UIImage *)fullImage fullImgUrl:(NSString *)fullImgUrl{
     self = [super init];
     if (self) {
+        //设置照片填充模式 可点击
         self.clipsToBounds = YES;
         self.userInteractionEnabled  = YES;
         self.contentMode = UIViewContentModeScaleAspectFill;

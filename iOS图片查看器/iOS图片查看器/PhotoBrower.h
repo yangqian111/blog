@@ -11,17 +11,12 @@
 @interface PhotoBrower : UIView
 
 /**
- *  存放图片的数组
+ 显示大图
+
+ @param photos 照片数组 装的Photo
+ @param index  当前的照片是第几张
  */
-@property (nonatomic,strong) NSArray *photos;
-/**
- *  当前的index
- */
-@property (nonatomic,assign) int currentIndex;
-/**
- *  显示图片浏览器
- */
--(void)show;
++ (void)showWithPhotos:(NSArray *)photos index:(NSInteger)index;
 
 
 @end
