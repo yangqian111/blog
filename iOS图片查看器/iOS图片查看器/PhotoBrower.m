@@ -9,6 +9,7 @@
 #import "PhotoBrower.h"
 #import "UIImageView+WebCache.h"
 #import "Photo.h"
+#import "ProgressView.h"
 
 #define YQKeyWindow [UIApplication sharedApplication].keyWindow
 #define OutScrollVIewTag 101
@@ -119,11 +120,20 @@
             }];
             return;
         }
+        ProgressView *progress = [[ProgressView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2.0-30, SCREEN_HEIGHT/2.0-30, 60, 60)];
         NSURL *fullImgUrl = [NSURL URLWithString:photo.fullImgUrl];
         [photo sd_setImageWithURL:fullImgUrl placeholderImage:nil options:SDWebImageRetryFailed | SDWebImageLowPriority progress:^(NSInteger receivedSize, NSInteger expectedSize) {
             //开始下载  这里后面会做一些效果 比如下载的进度条  一个load
+            photo.frame = CGRectMake(0, 0, SCREEN_WIDTH/2, SCREEN_HEIGHT/3);
+            photo.center = CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
+            photo.image = photo.thumbnail.image;
+            self.blackView.alpha = 1.0;
+            [photoScrollView addSubview:progress];
+            progress.progress = receivedSize*1.0/expectedSize*1.0;
+            
         } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
             if (image!=nil) {
+                [progress dismiss];
                 photo.frame = [self.originRects[i] CGRectValue];
                 //如果是网上下载下来的图片  那么改变一下photo的位置  后面做动画 会和已有缓存的图片显示效果不一样
                 if (cacheType==SDImageCacheTypeNone) {
@@ -250,6 +260,9 @@
     for (UIView *subview in photoScrollView.subviews) {
         if ([subview isKindOfClass:[Photo class]]) {
             photo = (Photo *)subview;
+        }
+        if ([subview isKindOfClass:[ProgressView class]]) {
+            [subview removeFromSuperview];
         }
     }
     photoScrollView.zoomScale = 1.0;

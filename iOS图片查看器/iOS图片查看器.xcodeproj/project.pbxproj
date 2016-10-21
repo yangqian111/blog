@@ -31,6 +31,7 @@
 		56F2E58D1DB760CD00569435 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F2E57D1DB760CD00569435 /* UIImageView+HighlightedWebCache.m */; };
 		56F2E58E1DB760CD00569435 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F2E57F1DB760CD00569435 /* UIImageView+WebCache.m */; };
 		56F2E58F1DB760CD00569435 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F2E5811DB760CD00569435 /* UIView+WebCacheOperation.m */; };
+		56F89E621DB8A0C7009CD04D /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F89E611DB8A0C7009CD04D /* ProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		56F2E57F1DB760CD00569435 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		56F2E5801DB760CD00569435 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		56F2E5811DB760CD00569435 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		56F89E601DB8A0C7009CD04D /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		56F89E611DB8A0C7009CD04D /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +201,8 @@
 				56F2E55F1DB75F3500569435 /* Photo.m */,
 				56F2E5611DB75F5400569435 /* PhotoBrower.h */,
 				56F2E5621DB75F5400569435 /* PhotoBrower.m */,
+				56F89E601DB8A0C7009CD04D /* ProgressView.h */,
+				56F89E611DB8A0C7009CD04D /* ProgressView.m */,
 			);
 			name = PhotoBrower;
 			sourceTree = "<group>";
@@ -375,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56F2E58D1DB760CD00569435 /* UIImageView+HighlightedWebCache.m in Sources */,
+				56F89E621DB8A0C7009CD04D /* ProgressView.m in Sources */,
 				56F2E58C1DB760CD00569435 /* UIImage+MultiFormat.m in Sources */,
 				56F2E5871DB760CD00569435 /* SDWebImageDownloaderOperation.m in Sources */,
 				56F2E5631DB75F5400569435 /* PhotoBrower.m in Sources */,

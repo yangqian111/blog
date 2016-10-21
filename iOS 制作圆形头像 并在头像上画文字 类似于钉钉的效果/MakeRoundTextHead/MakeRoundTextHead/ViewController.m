@@ -28,8 +28,8 @@
     
     NSArray *strs = @[@"为我",@"样的",@"好啊",@"H在",@"hc",@"2才",@"哈哈",@"打算打算打算的",@"还有人v",@"哈哈"];
     
-    for (int i=0; i<10; i++) {
-        RoundHeadView *head = [[RoundHeadView alloc] initWithFrame:CGRectMake(30, 100+(40*i), 40, 40)];
+    for (int i=0; i<5; i++) {
+        RoundHeadView *head = [[RoundHeadView alloc] initWithFrame:CGRectMake(30+(40*i), 100, 40, 40)];
         [head setTitle:strs[i]];
         [self.view addSubview:head];
     }

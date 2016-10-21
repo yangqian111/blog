@@ -40,5 +40,4 @@
  */
 - (instancetype)initWithThumbnail:(UIImageView *)thumbnail fullImage:(UIImage *)fullImage fullImgUrl:(NSString *)fullImgUrl;
 
-
 @end

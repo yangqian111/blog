@@ -54,12 +54,15 @@
 - (void)imageTap:(UIGestureRecognizer *)recognizer{
     UIImageView *thumbnail = (UIImageView *)recognizer.view;
     Photo *photo = nil;
+    Photo *photo1 = nil;
     if (thumbnail.tag<3) {//属于有大图的
         photo = [[Photo alloc] initWithThumbnail:thumbnail fullImage:thumbnail.image fullImgUrl:nil];
+        photo1 = [[Photo alloc] initWithThumbnail:thumbnail fullImage:thumbnail.image fullImgUrl:nil];
     }else{
         photo = [[Photo alloc] initWithThumbnail:thumbnail fullImage:nil fullImgUrl:@"http://pic24.nipic.com/20121003/10754047_140022530392_2.jpg"];
+        photo1 = [[Photo alloc] initWithThumbnail:thumbnail fullImage:nil fullImgUrl:@"http://e.hiphotos.baidu.com/image/pic/item/14ce36d3d539b600be63e95eed50352ac75cb7ae.jpg"];
     }
-   [PhotoBrower showWithPhotos:@[photo] index:0];
+   [PhotoBrower showWithPhotos:@[photo,photo1] index:0];
 }
 
 @end
