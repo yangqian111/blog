@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56C4B2DF1DBDDF3C001ABDEB /* PPSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C4B2DE1DBDDF3C001ABDEB /* PPSActionSheet.m */; };
 		56F2E52C1DB75DE800569435 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F2E52B1DB75DE800569435 /* main.m */; };
 		56F2E52F1DB75DE800569435 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F2E52E1DB75DE800569435 /* AppDelegate.m */; };
 		56F2E5321DB75DE800569435 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F2E5311DB75DE800569435 /* ViewController.m */; };
@@ -52,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56C4B2DD1DBDDF3C001ABDEB /* PPSActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSActionSheet.h; sourceTree = "<group>"; };
+		56C4B2DE1DBDDF3C001ABDEB /* PPSActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSActionSheet.m; sourceTree = "<group>"; };
 		56F2E5271DB75DE800569435 /* iOS图片查看器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS图片查看器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F2E52B1DB75DE800569435 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56F2E52D1DB75DE800569435 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +133,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56C4B2DC1DBDDEEE001ABDEB /* ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				56C4B2DD1DBDDF3C001ABDEB /* PPSActionSheet.h */,
+				56C4B2DE1DBDDF3C001ABDEB /* PPSActionSheet.m */,
+			);
+			name = ActionSheet;
+			sourceTree = "<group>";
+		};
 		56F2E51E1DB75DE800569435 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +165,7 @@
 		56F2E5291DB75DE800569435 /* iOS图片查看器 */ = {
 			isa = PBXGroup;
 			children = (
+				56C4B2DC1DBDDEEE001ABDEB /* ActionSheet */,
 				56F2E5641DB760CD00569435 /* SDWebImage */,
 				56F2E55D1DB75F1900569435 /* PhotoBrower */,
 				56F2E52D1DB75DE800569435 /* AppDelegate.h */,
@@ -395,6 +408,7 @@
 				56F2E52F1DB75DE800569435 /* AppDelegate.m in Sources */,
 				56F2E5821DB760CD00569435 /* NSData+ImageContentType.m in Sources */,
 				56F2E52C1DB75DE800569435 /* main.m in Sources */,
+				56C4B2DF1DBDDF3C001ABDEB /* PPSActionSheet.m in Sources */,
 				56F2E58E1DB760CD00569435 /* UIImageView+WebCache.m in Sources */,
 				56F2E5881DB760CD00569435 /* SDWebImageManager.m in Sources */,
 				56F2E5851DB760CD00569435 /* SDWebImageDecoder.m in Sources */,

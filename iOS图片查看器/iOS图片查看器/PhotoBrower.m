@@ -10,13 +10,15 @@
 #import "UIImageView+WebCache.h"
 #import "Photo.h"
 #import "ProgressView.h"
+#import "PPSActionSheet.h"
+#import <Photos/Photos.h>
 
 #define YQKeyWindow [UIApplication sharedApplication].keyWindow
 #define OutScrollVIewTag 101
 #define SCREEN_WIDTH                    [[UIScreen mainScreen] bounds].size.width
 #define SCREEN_HEIGHT                   [[UIScreen mainScreen] bounds].size.height
 
-@interface PhotoBrower()<UIScrollViewDelegate>
+@interface PhotoBrower()<UIScrollViewDelegate,PPSActionSheetDelegate>
 /**
  *  底层滑动的scrollview
  */
@@ -94,13 +96,8 @@
         [self.outScrollView addSubview:photoScrollView];
         
         Photo *photo = self.photos[i];
-        UITapGestureRecognizer *photoTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(photoTap:)];
-        UITapGestureRecognizer *zonmTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(zonmTap:)];
-        zonmTap.numberOfTapsRequired = 2;
-        [photoScrollView addGestureRecognizer:photoTap];
-        [photoScrollView addGestureRecognizer:zonmTap];
-        [photoTap requireGestureRecognizerToFail:zonmTap];
-        
+        //添加手势
+        [self addCustomGestureRecognizer:photoScrollView];
         [photoScrollView addSubview:photo];
         //有本地高清大图 直接大图显示出来就不需要再次访问网络
         if (photo.fullImage) {
@@ -152,6 +149,32 @@
                //下载错误 提示一个 错误需要
             }
         }];
+    }
+}
+
+#pragma mark - 添加手势
+- (void)addCustomGestureRecognizer:(UIView *)targetView{
+    //单击手势
+    UITapGestureRecognizer *photoTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(photoTap:)];
+    //双击手势
+    UITapGestureRecognizer *zonmTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(zonmTap:)];
+    zonmTap.numberOfTapsRequired = 2;
+    [targetView addGestureRecognizer:photoTap];
+    [targetView addGestureRecognizer:zonmTap];
+    [photoTap requireGestureRecognizerToFail:zonmTap];
+    //长按手势
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(savePhoto:)];
+    [longPress requireGestureRecognizerToFail:zonmTap];
+    [longPress requireGestureRecognizerToFail:photoTap];
+    [targetView addGestureRecognizer:longPress];
+}
+
+#pragma mark - 保存照片
+- (void)savePhoto:(UILongPressGestureRecognizer *)gestureRecognizer{
+    if ([gestureRecognizer state] == UIGestureRecognizerStateBegan) {
+        PPSActionSheet *sheet = [[PPSActionSheet alloc] initWithDelegate:self cancleTitle:@"取消" otherTitles:@"保存图片", nil];
+        sheet.delegate = self;
+        [sheet show];
     }
 }
 
@@ -284,4 +307,32 @@
     }];
 }
 
+#pragma mark - PPSActionSheetDelegate
+-(void)actionSheet:(PPSActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if (buttonIndex == 1) {
+        Photo *photo = self.photos[self.currentIndex];
+        if (photo.image) { //保证图片存在 已经下载完成
+            //判断是否有访问相册权限
+            PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+            if (status == PHAuthorizationStatusRestricted ||
+                status == PHAuthorizationStatusDenied) {
+                //没有权限 拒绝
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"没有访问相册的权限" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+                [alert show];
+            }else{
+                UIImageWriteToSavedPhotosAlbum(photo.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
+            }
+        }
+    }
+}
+ - (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo{
+     if (error == nil) {
+         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"已存入手机相册" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+         [alert show];
+         
+     }else{
+         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"保存失败" delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定", nil];
+         [alert show];
+     }
+}
 @end
