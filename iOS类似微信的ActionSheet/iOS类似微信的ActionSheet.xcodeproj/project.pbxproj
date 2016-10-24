@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56C4B2A71DBDA0D3001ABDEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C4B2A61DBDA0D3001ABDEB /* main.m */; };
+		56C4B2AA1DBDA0D3001ABDEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C4B2A91DBDA0D3001ABDEB /* AppDelegate.m */; };
+		56C4B2AD1DBDA0D3001ABDEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C4B2AC1DBDA0D3001ABDEB /* ViewController.m */; };
+		56C4B2B01DBDA0D3001ABDEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C4B2AE1DBDA0D3001ABDEB /* Main.storyboard */; };
+		56C4B2B21DBDA0D3001ABDEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C4B2B11DBDA0D3001ABDEB /* Assets.xcassets */; };
+		56C4B2B51DBDA0D3001ABDEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C4B2B31DBDA0D3001ABDEB /* LaunchScreen.storyboard */; };
+		56C4B2C01DBDA0D3001ABDEB /* iOS_____ActionSheetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C4B2BF1DBDA0D3001ABDEB /* iOS_____ActionSheetTests.m */; };
+		56C4B2CB1DBDA0D3001ABDEB /* iOS_____ActionSheetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C4B2CA1DBDA0D3001ABDEB /* iOS_____ActionSheetUITests.m */; };
+		56C4B2DB1DBDA12B001ABDEB /* PPSActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C4B2DA1DBDA12B001ABDEB /* PPSActionSheet.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56C4B2BC1DBDA0D3001ABDEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56C4B29A1DBDA0D3001ABDEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56C4B2A11DBDA0D3001ABDEB;
+			remoteInfo = "iOS类似微信的ActionSheet";
+		};
+		56C4B2C71DBDA0D3001ABDEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56C4B29A1DBDA0D3001ABDEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56C4B2A11DBDA0D3001ABDEB;
+			remoteInfo = "iOS类似微信的ActionSheet";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		56C4B2A21DBDA0D3001ABDEB /* iOS类似微信的ActionSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS类似微信的ActionSheet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C4B2A61DBDA0D3001ABDEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56C4B2A81DBDA0D3001ABDEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		56C4B2A91DBDA0D3001ABDEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		56C4B2AB1DBDA0D3001ABDEB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		56C4B2AC1DBDA0D3001ABDEB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		56C4B2AF1DBDA0D3001ABDEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56C4B2B11DBDA0D3001ABDEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56C4B2B41DBDA0D3001ABDEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56C4B2B61DBDA0D3001ABDEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56C4B2BB1DBDA0D3001ABDEB /* iOS类似微信的ActionSheetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS类似微信的ActionSheetTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C4B2BF1DBDA0D3001ABDEB /* iOS_____ActionSheetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "iOS_____ActionSheetTests.m"; sourceTree = "<group>"; };
+		56C4B2C11DBDA0D3001ABDEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56C4B2C61DBDA0D3001ABDEB /* iOS类似微信的ActionSheetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS类似微信的ActionSheetUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56C4B2CA1DBDA0D3001ABDEB /* iOS_____ActionSheetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "iOS_____ActionSheetUITests.m"; sourceTree = "<group>"; };
+		56C4B2CC1DBDA0D3001ABDEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56C4B2D91DBDA12B001ABDEB /* PPSActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSActionSheet.h; sourceTree = "<group>"; };
+		56C4B2DA1DBDA12B001ABDEB /* PPSActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSActionSheet.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56C4B29F1DBDA0D3001ABDEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C4B2B81DBDA0D3001ABDEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C4B2C31DBDA0D3001ABDEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56C4B2991DBDA0D3001ABDEB = {
+			isa = PBXGroup;
+			children = (
+				56C4B2A41DBDA0D3001ABDEB /* iOS类似微信的ActionSheet */,
+				56C4B2BE1DBDA0D3001ABDEB /* iOS类似微信的ActionSheetTests */,
+				56C4B2C91DBDA0D3001ABDEB /* iOS类似微信的ActionSheetUITests */,
+				56C4B2A31DBDA0D3001ABDEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56C4B2A31DBDA0D3001ABDEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56C4B2A21DBDA0D3001ABDEB /* iOS类似微信的ActionSheet.app */,
+				56C4B2BB1DBDA0D3001ABDEB /* iOS类似微信的ActionSheetTests.xctest */,
+				56C4B2C61DBDA0D3001ABDEB /* iOS类似微信的ActionSheetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56C4B2A41DBDA0D3001ABDEB /* iOS类似微信的ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				56C4B2D81DBDA0E4001ABDEB /* ActionSheet */,
+				56C4B2A81DBDA0D3001ABDEB /* AppDelegate.h */,
+				56C4B2A91DBDA0D3001ABDEB /* AppDelegate.m */,
+				56C4B2AB1DBDA0D3001ABDEB /* ViewController.h */,
+				56C4B2AC1DBDA0D3001ABDEB /* ViewController.m */,
+				56C4B2AE1DBDA0D3001ABDEB /* Main.storyboard */,
+				56C4B2B11DBDA0D3001ABDEB /* Assets.xcassets */,
+				56C4B2B31DBDA0D3001ABDEB /* LaunchScreen.storyboard */,
+				56C4B2B61DBDA0D3001ABDEB /* Info.plist */,
+				56C4B2A51DBDA0D3001ABDEB /* Supporting Files */,
+			);
+			path = "iOS类似微信的ActionSheet";
+			sourceTree = "<group>";
+		};
+		56C4B2A51DBDA0D3001ABDEB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56C4B2A61DBDA0D3001ABDEB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56C4B2BE1DBDA0D3001ABDEB /* iOS类似微信的ActionSheetTests */ = {
+			isa = PBXGroup;
+			children = (
+				56C4B2BF1DBDA0D3001ABDEB /* iOS_____ActionSheetTests.m */,
+				56C4B2C11DBDA0D3001ABDEB /* Info.plist */,
+			);
+			path = "iOS类似微信的ActionSheetTests";
+			sourceTree = "<group>";
+		};
+		56C4B2C91DBDA0D3001ABDEB /* iOS类似微信的ActionSheetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56C4B2CA1DBDA0D3001ABDEB /* iOS_____ActionSheetUITests.m */,
+				56C4B2CC1DBDA0D3001ABDEB /* Info.plist */,
+			);
+			path = "iOS类似微信的ActionSheetUITests";
+			sourceTree = "<group>";
+		};
+		56C4B2D81DBDA0E4001ABDEB /* ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+				56C4B2D91DBDA12B001ABDEB /* PPSActionSheet.h */,
+				56C4B2DA1DBDA12B001ABDEB /* PPSActionSheet.m */,
+			);
+			name = ActionSheet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56C4B2A11DBDA0D3001ABDEB /* iOS类似微信的ActionSheet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56C4B2CF1DBDA0D3001ABDEB /* Build configuration list for PBXNativeTarget "iOS类似微信的ActionSheet" */;
+			buildPhases = (
+				56C4B29E1DBDA0D3001ABDEB /* Sources */,
+				56C4B29F1DBDA0D3001ABDEB /* Frameworks */,
+				56C4B2A01DBDA0D3001ABDEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS类似微信的ActionSheet";
+			productName = "iOS类似微信的ActionSheet";
+			productReference = 56C4B2A21DBDA0D3001ABDEB /* iOS类似微信的ActionSheet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56C4B2BA1DBDA0D3001ABDEB /* iOS类似微信的ActionSheetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56C4B2D21DBDA0D3001ABDEB /* Build configuration list for PBXNativeTarget "iOS类似微信的ActionSheetTests" */;
+			buildPhases = (
+				56C4B2B71DBDA0D3001ABDEB /* Sources */,
+				56C4B2B81DBDA0D3001ABDEB /* Frameworks */,
+				56C4B2B91DBDA0D3001ABDEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56C4B2BD1DBDA0D3001ABDEB /* PBXTargetDependency */,
+			);
+			name = "iOS类似微信的ActionSheetTests";
+			productName = "iOS类似微信的ActionSheetTests";
+			productReference = 56C4B2BB1DBDA0D3001ABDEB /* iOS类似微信的ActionSheetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56C4B2C51DBDA0D3001ABDEB /* iOS类似微信的ActionSheetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56C4B2D51DBDA0D3001ABDEB /* Build configuration list for PBXNativeTarget "iOS类似微信的ActionSheetUITests" */;
+			buildPhases = (
+				56C4B2C21DBDA0D3001ABDEB /* Sources */,
+				56C4B2C31DBDA0D3001ABDEB /* Frameworks */,
+				56C4B2C41DBDA0D3001ABDEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56C4B2C81DBDA0D3001ABDEB /* PBXTargetDependency */,
+			);
+			name = "iOS类似微信的ActionSheetUITests";
+			productName = "iOS类似微信的ActionSheetUITests";
+			productReference = 56C4B2C61DBDA0D3001ABDEB /* iOS类似微信的ActionSheetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56C4B29A1DBDA0D3001ABDEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "羊谦";
+				TargetAttributes = {
+					56C4B2A11DBDA0D3001ABDEB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 46FJ5HKR96;
+						ProvisioningStyle = Automatic;
+					};
+					56C4B2BA1DBDA0D3001ABDEB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 46FJ5HKR96;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 56C4B2A11DBDA0D3001ABDEB;
+					};
+					56C4B2C51DBDA0D3001ABDEB = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 46FJ5HKR96;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 56C4B2A11DBDA0D3001ABDEB;
+					};
+				};
+			};
+			buildConfigurationList = 56C4B29D1DBDA0D3001ABDEB /* Build configuration list for PBXProject "iOS类似微信的ActionSheet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56C4B2991DBDA0D3001ABDEB;
+			productRefGroup = 56C4B2A31DBDA0D3001ABDEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56C4B2A11DBDA0D3001ABDEB /* iOS类似微信的ActionSheet */,
+				56C4B2BA1DBDA0D3001ABDEB /* iOS类似微信的ActionSheetTests */,
+				56C4B2C51DBDA0D3001ABDEB /* iOS类似微信的ActionSheetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56C4B2A01DBDA0D3001ABDEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C4B2B51DBDA0D3001ABDEB /* LaunchScreen.storyboard in Resources */,
+				56C4B2B21DBDA0D3001ABDEB /* Assets.xcassets in Resources */,
+				56C4B2B01DBDA0D3001ABDEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C4B2B91DBDA0D3001ABDEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C4B2C41DBDA0D3001ABDEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56C4B29E1DBDA0D3001ABDEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C4B2AD1DBDA0D3001ABDEB /* ViewController.m in Sources */,
+				56C4B2DB1DBDA12B001ABDEB /* PPSActionSheet.m in Sources */,
+				56C4B2AA1DBDA0D3001ABDEB /* AppDelegate.m in Sources */,
+				56C4B2A71DBDA0D3001ABDEB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C4B2B71DBDA0D3001ABDEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C4B2C01DBDA0D3001ABDEB /* iOS_____ActionSheetTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56C4B2C21DBDA0D3001ABDEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C4B2CB1DBDA0D3001ABDEB /* iOS_____ActionSheetUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56C4B2BD1DBDA0D3001ABDEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56C4B2A11DBDA0D3001ABDEB /* iOS类似微信的ActionSheet */;
+			targetProxy = 56C4B2BC1DBDA0D3001ABDEB /* PBXContainerItemProxy */;
+		};
+		56C4B2C81DBDA0D3001ABDEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56C4B2A11DBDA0D3001ABDEB /* iOS类似微信的ActionSheet */;
+			targetProxy = 56C4B2C71DBDA0D3001ABDEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56C4B2AE1DBDA0D3001ABDEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56C4B2AF1DBDA0D3001ABDEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56C4B2B31DBDA0D3001ABDEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56C4B2B41DBDA0D3001ABDEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56C4B2CD1DBDA0D3001ABDEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56C4B2CE1DBDA0D3001ABDEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56C4B2D01DBDA0D3001ABDEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS类似微信的ActionSheet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.actionsheet.iOS-----ActionSheet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		56C4B2D11DBDA0D3001ABDEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS类似微信的ActionSheet/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.actionsheet.iOS-----ActionSheet";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		56C4B2D31DBDA0D3001ABDEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS类似微信的ActionSheetTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.actionsheet.iOS-----ActionSheetTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS类似微信的ActionSheet.app/iOS类似微信的ActionSheet";
+			};
+			name = Debug;
+		};
+		56C4B2D41DBDA0D3001ABDEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS类似微信的ActionSheetTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.actionsheet.iOS-----ActionSheetTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS类似微信的ActionSheet.app/iOS类似微信的ActionSheet";
+			};
+			name = Release;
+		};
+		56C4B2D61DBDA0D3001ABDEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS类似微信的ActionSheetUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.actionsheet.iOS-----ActionSheetUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "iOS类似微信的ActionSheet";
+			};
+			name = Debug;
+		};
+		56C4B2D71DBDA0D3001ABDEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS类似微信的ActionSheetUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.actionsheet.iOS-----ActionSheetUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "iOS类似微信的ActionSheet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56C4B29D1DBDA0D3001ABDEB /* Build configuration list for PBXProject "iOS类似微信的ActionSheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C4B2CD1DBDA0D3001ABDEB /* Debug */,
+				56C4B2CE1DBDA0D3001ABDEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56C4B2CF1DBDA0D3001ABDEB /* Build configuration list for PBXNativeTarget "iOS类似微信的ActionSheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C4B2D01DBDA0D3001ABDEB /* Debug */,
+				56C4B2D11DBDA0D3001ABDEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		56C4B2D21DBDA0D3001ABDEB /* Build configuration list for PBXNativeTarget "iOS类似微信的ActionSheetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C4B2D31DBDA0D3001ABDEB /* Debug */,
+				56C4B2D41DBDA0D3001ABDEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		56C4B2D51DBDA0D3001ABDEB /* Build configuration list for PBXNativeTarget "iOS类似微信的ActionSheetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56C4B2D61DBDA0D3001ABDEB /* Debug */,
+				56C4B2D71DBDA0D3001ABDEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56C4B29A1DBDA0D3001ABDEB /* Project object */;
+}
