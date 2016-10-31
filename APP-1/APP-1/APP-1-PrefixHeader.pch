@@ -1,0 +1,14 @@
+//
+//  APP-1-PrefixHeader.pch
+//  APP-1
+//
+//  Created by 羊谦 on 2016/10/28.
+//  Copyright © 2016年 羊谦. All rights reserved.
+//
+
+#ifndef APP_1_PrefixHeader_pch
+#define APP_1_PrefixHeader_pch
+
+//在这里直接定义你的宏变量   或者公共引用就行
+
+#endif /* APP_1_PrefixHeader_pch */
