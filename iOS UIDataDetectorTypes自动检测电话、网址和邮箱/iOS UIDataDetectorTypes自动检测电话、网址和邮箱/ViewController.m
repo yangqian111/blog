@@ -20,9 +20,9 @@
     UITextView *textView1 = [[UITextView alloc] initWithFrame:CGRectMake(10, 10, self.view.frame.size.width, 200)];
     textView1.editable = NO;//不允许编辑
     textView1.font = [UIFont systemFontOfSize:20];
-    textView1.text = @"只检测手机号------\r\n我的手机号不是： 13888888888 \r\n\r\n"
-    "我的博客刚刚在线网址： www.xxxxxx.com \r\n\r\n"
-    "我的邮箱： worldligang@163.com \r\n\r\n";
+    textView1.text = @"只检测手机号------\r\n我的手机号不是： 13666666666 \r\n\r\n"
+    "我的博客网址： www.ppsheep.com \r\n\r\n"
+    "我的邮箱： 787688073@qq.com \r\n\r\n";
     textView1.dataDetectorTypes = UIDataDetectorTypePhoneNumber;
     [self.view addSubview:textView1];
     
@@ -31,12 +31,11 @@
     UITextView *textView2 = [[UITextView alloc] initWithFrame:CGRectMake(10, 250, self.view.frame.size.width, 200)];
     textView2.font = [UIFont systemFontOfSize:20];
     textView2.editable = NO;
-    textView2.text = @"只检测网址和邮箱------\r\n我的手机号不是： 13888888888 \r\n\r\n"
-    "我的博客刚刚在线网址： www.xxxxxx.com \r\n\r\n"
-    "我的邮箱： worldligang@163.com \r\n\r\n";
+    textView2.text = @"只检测网址和邮箱------\r\n我的手机号不是： 13666666666 \r\n\r\n"
+    "我的博客网址： www.ppsheep.com \r\n\r\n"
+    "我的邮箱： 787688073@qq.com \r\n\r\n";
     textView2.dataDetectorTypes = UIDataDetectorTypeLink;
-    [self.view addSubview:textView2];
-}
+    [self.view addSubview:textView2];}
 
 
 - (void)didReceiveMemoryWarning {
