@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		565C48301DC9877C003C0DB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 565C482F1DC9877C003C0DB0 /* main.m */; };
+		565C48331DC9877C003C0DB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 565C48321DC9877C003C0DB0 /* AppDelegate.m */; };
+		565C48361DC9877C003C0DB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 565C48351DC9877C003C0DB0 /* ViewController.m */; };
+		565C48391DC9877C003C0DB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565C48371DC9877C003C0DB0 /* Main.storyboard */; };
+		565C483B1DC9877C003C0DB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565C483A1DC9877C003C0DB0 /* Assets.xcassets */; };
+		565C483E1DC9877C003C0DB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565C483C1DC9877C003C0DB0 /* LaunchScreen.storyboard */; };
+		565C48491DC9877C003C0DB0 /* iOS_UIDataDetectorTypes____________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 565C48481DC9877C003C0DB0 /* iOS_UIDataDetectorTypes____________Tests.m */; };
+		565C48541DC9877C003C0DB0 /* iOS_UIDataDetectorTypes____________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 565C48531DC9877C003C0DB0 /* iOS_UIDataDetectorTypes____________UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		565C48451DC9877C003C0DB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 565C48231DC9877C003C0DB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 565C482A1DC9877C003C0DB0;
+			remoteInfo = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱";
+		};
+		565C48501DC9877C003C0DB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 565C48231DC9877C003C0DB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 565C482A1DC9877C003C0DB0;
+			remoteInfo = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		565C482B1DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		565C482F1DC9877C003C0DB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		565C48311DC9877C003C0DB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		565C48321DC9877C003C0DB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		565C48341DC9877C003C0DB0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		565C48351DC9877C003C0DB0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		565C48381DC9877C003C0DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		565C483A1DC9877C003C0DB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		565C483D1DC9877C003C0DB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		565C483F1DC9877C003C0DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		565C48441DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		565C48481DC9877C003C0DB0 /* iOS_UIDataDetectorTypes____________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "iOS_UIDataDetectorTypes____________Tests.m"; sourceTree = "<group>"; };
+		565C484A1DC9877C003C0DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		565C484F1DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		565C48531DC9877C003C0DB0 /* iOS_UIDataDetectorTypes____________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "iOS_UIDataDetectorTypes____________UITests.m"; sourceTree = "<group>"; };
+		565C48551DC9877C003C0DB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		565C48281DC9877C003C0DB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565C48411DC9877C003C0DB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565C484C1DC9877C003C0DB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		565C48221DC9877C003C0DB0 = {
+			isa = PBXGroup;
+			children = (
+				565C482D1DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱 */,
+				565C48471DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱Tests */,
+				565C48521DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱UITests */,
+				565C482C1DC9877C003C0DB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		565C482C1DC9877C003C0DB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				565C482B1DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱.app */,
+				565C48441DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱Tests.xctest */,
+				565C484F1DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		565C482D1DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱 */ = {
+			isa = PBXGroup;
+			children = (
+				565C48311DC9877C003C0DB0 /* AppDelegate.h */,
+				565C48321DC9877C003C0DB0 /* AppDelegate.m */,
+				565C48341DC9877C003C0DB0 /* ViewController.h */,
+				565C48351DC9877C003C0DB0 /* ViewController.m */,
+				565C48371DC9877C003C0DB0 /* Main.storyboard */,
+				565C483A1DC9877C003C0DB0 /* Assets.xcassets */,
+				565C483C1DC9877C003C0DB0 /* LaunchScreen.storyboard */,
+				565C483F1DC9877C003C0DB0 /* Info.plist */,
+				565C482E1DC9877C003C0DB0 /* Supporting Files */,
+			);
+			path = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱";
+			sourceTree = "<group>";
+		};
+		565C482E1DC9877C003C0DB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				565C482F1DC9877C003C0DB0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		565C48471DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱Tests */ = {
+			isa = PBXGroup;
+			children = (
+				565C48481DC9877C003C0DB0 /* iOS_UIDataDetectorTypes____________Tests.m */,
+				565C484A1DC9877C003C0DB0 /* Info.plist */,
+			);
+			path = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱Tests";
+			sourceTree = "<group>";
+		};
+		565C48521DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱UITests */ = {
+			isa = PBXGroup;
+			children = (
+				565C48531DC9877C003C0DB0 /* iOS_UIDataDetectorTypes____________UITests.m */,
+				565C48551DC9877C003C0DB0 /* Info.plist */,
+			);
+			path = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		565C482A1DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 565C48581DC9877C003C0DB0 /* Build configuration list for PBXNativeTarget "iOS UIDataDetectorTypes自动检测电话、网址和邮箱" */;
+			buildPhases = (
+				565C48271DC9877C003C0DB0 /* Sources */,
+				565C48281DC9877C003C0DB0 /* Frameworks */,
+				565C48291DC9877C003C0DB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱";
+			productName = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱";
+			productReference = 565C482B1DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱.app */;
+			productType = "com.apple.product-type.application";
+		};
+		565C48431DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 565C485B1DC9877C003C0DB0 /* Build configuration list for PBXNativeTarget "iOS UIDataDetectorTypes自动检测电话、网址和邮箱Tests" */;
+			buildPhases = (
+				565C48401DC9877C003C0DB0 /* Sources */,
+				565C48411DC9877C003C0DB0 /* Frameworks */,
+				565C48421DC9877C003C0DB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				565C48461DC9877C003C0DB0 /* PBXTargetDependency */,
+			);
+			name = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱Tests";
+			productName = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱Tests";
+			productReference = 565C48441DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		565C484E1DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 565C485E1DC9877C003C0DB0 /* Build configuration list for PBXNativeTarget "iOS UIDataDetectorTypes自动检测电话、网址和邮箱UITests" */;
+			buildPhases = (
+				565C484B1DC9877C003C0DB0 /* Sources */,
+				565C484C1DC9877C003C0DB0 /* Frameworks */,
+				565C484D1DC9877C003C0DB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				565C48511DC9877C003C0DB0 /* PBXTargetDependency */,
+			);
+			name = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱UITests";
+			productName = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱UITests";
+			productReference = 565C484F1DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		565C48231DC9877C003C0DB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "羊谦";
+				TargetAttributes = {
+					565C482A1DC9877C003C0DB0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 46FJ5HKR96;
+						ProvisioningStyle = Automatic;
+					};
+					565C48431DC9877C003C0DB0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 46FJ5HKR96;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 565C482A1DC9877C003C0DB0;
+					};
+					565C484E1DC9877C003C0DB0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 46FJ5HKR96;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 565C482A1DC9877C003C0DB0;
+					};
+				};
+			};
+			buildConfigurationList = 565C48261DC9877C003C0DB0 /* Build configuration list for PBXProject "iOS UIDataDetectorTypes自动检测电话、网址和邮箱" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 565C48221DC9877C003C0DB0;
+			productRefGroup = 565C482C1DC9877C003C0DB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				565C482A1DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱 */,
+				565C48431DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱Tests */,
+				565C484E1DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		565C48291DC9877C003C0DB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565C483E1DC9877C003C0DB0 /* LaunchScreen.storyboard in Resources */,
+				565C483B1DC9877C003C0DB0 /* Assets.xcassets in Resources */,
+				565C48391DC9877C003C0DB0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565C48421DC9877C003C0DB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565C484D1DC9877C003C0DB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		565C48271DC9877C003C0DB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565C48361DC9877C003C0DB0 /* ViewController.m in Sources */,
+				565C48331DC9877C003C0DB0 /* AppDelegate.m in Sources */,
+				565C48301DC9877C003C0DB0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565C48401DC9877C003C0DB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565C48491DC9877C003C0DB0 /* iOS_UIDataDetectorTypes____________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		565C484B1DC9877C003C0DB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				565C48541DC9877C003C0DB0 /* iOS_UIDataDetectorTypes____________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		565C48461DC9877C003C0DB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 565C482A1DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱 */;
+			targetProxy = 565C48451DC9877C003C0DB0 /* PBXContainerItemProxy */;
+		};
+		565C48511DC9877C003C0DB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 565C482A1DC9877C003C0DB0 /* iOS UIDataDetectorTypes自动检测电话、网址和邮箱 */;
+			targetProxy = 565C48501DC9877C003C0DB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		565C48371DC9877C003C0DB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				565C48381DC9877C003C0DB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		565C483C1DC9877C003C0DB0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				565C483D1DC9877C003C0DB0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		565C48561DC9877C003C0DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		565C48571DC9877C003C0DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		565C48591DC9877C003C0DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS-UIDataDetectorTypes------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		565C485A1DC9877C003C0DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS-UIDataDetectorTypes------------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		565C485C1DC9877C003C0DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS-UIDataDetectorTypes------------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS UIDataDetectorTypes自动检测电话、网址和邮箱.app/iOS UIDataDetectorTypes自动检测电话、网址和邮箱";
+			};
+			name = Debug;
+		};
+		565C485D1DC9877C003C0DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS-UIDataDetectorTypes------------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS UIDataDetectorTypes自动检测电话、网址和邮箱.app/iOS UIDataDetectorTypes自动检测电话、网址和邮箱";
+			};
+			name = Release;
+		};
+		565C485F1DC9877C003C0DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS-UIDataDetectorTypes------------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱";
+			};
+			name = Debug;
+		};
+		565C48601DC9877C003C0DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS-UIDataDetectorTypes------------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "iOS UIDataDetectorTypes自动检测电话、网址和邮箱";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		565C48261DC9877C003C0DB0 /* Build configuration list for PBXProject "iOS UIDataDetectorTypes自动检测电话、网址和邮箱" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				565C48561DC9877C003C0DB0 /* Debug */,
+				565C48571DC9877C003C0DB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		565C48581DC9877C003C0DB0 /* Build configuration list for PBXNativeTarget "iOS UIDataDetectorTypes自动检测电话、网址和邮箱" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				565C48591DC9877C003C0DB0 /* Debug */,
+				565C485A1DC9877C003C0DB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		565C485B1DC9877C003C0DB0 /* Build configuration list for PBXNativeTarget "iOS UIDataDetectorTypes自动检测电话、网址和邮箱Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				565C485C1DC9877C003C0DB0 /* Debug */,
+				565C485D1DC9877C003C0DB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		565C485E1DC9877C003C0DB0 /* Build configuration list for PBXNativeTarget "iOS UIDataDetectorTypes自动检测电话、网址和邮箱UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				565C485F1DC9877C003C0DB0 /* Debug */,
+				565C48601DC9877C003C0DB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 565C48231DC9877C003C0DB0 /* Project object */;
+}
