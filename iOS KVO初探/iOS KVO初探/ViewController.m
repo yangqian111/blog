@@ -53,6 +53,12 @@
     NSLog(@"%@", keyPath);
 }
 
+-(void)dealloc{
+    [self.model removeObserver:self forKeyPath:@"name"];
+    [self.model removeObserver:self forKeyPath:@"name1"];
+    [self.model removeObserver:self forKeyPath:@"name2"];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
