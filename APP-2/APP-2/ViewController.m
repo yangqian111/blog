@@ -20,7 +20,9 @@
     label.text = @"当前是APP2";
     [self.view addSubview:label];
     
+    
 }
+
 
 
 - (void)didReceiveMemoryWarning {

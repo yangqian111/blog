@@ -56,9 +56,8 @@
 
 // 9.0之后
 //-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
-//    
+//    return YES;
 //}
-
 
 // 因为现在xcode8 最低支持8.0 所以  我还是用这个方法吧
 -(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
@@ -78,8 +77,35 @@
     }else if([url.absoluteString containsString:@"VC2"]){
         ViewController2 *vc2 = [[ViewController2 alloc] init];
         [nvc pushViewController:vc2 animated:YES];
+    //我这里直接通过APP1来判断了，比如要像支付宝或者微信之类的，会有一个特殊的参数表示 在SDK中写明了的
+    }else if ([url.absoluteString containsString:@"APP1"]){
+        NSLog(@"%@",url);
+        
+        //拿到源程序的
+        NSString * urlschemes = [[url.absoluteString componentsSeparatedByString:@"//"][1] componentsSeparatedByString:@"?"][0];
+        
+        //拿到参数
+        NSRange range = [url.absoluteString rangeOfString:@"?"];
+        NSString *paramStr = [url.absoluteString substringFromIndex:range.location+1];//去除问号
+        NSArray *params = [paramStr componentsSeparatedByString:@"&"];
+        NSLog(@"%@",params);
+        
+        //跳回源程序
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            // 延时3s模拟处理后回调指定的 URL Schemes并传递结果
+            
+            if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"APP2://"]]) {
+                
+                NSLog(@"跳转成功");
+                
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@://back?name=back&code=200",urlschemes]]];
+                
+            }else{
+                NSLog(@"跳转失败");
+                NSLog(@"未安装应用!");
+            }
+        });
     }
-    
     return YES;
 }
 

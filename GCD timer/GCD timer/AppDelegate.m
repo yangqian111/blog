@@ -1,13 +1,12 @@
 //
 //  AppDelegate.m
-//  APP-1
+//  GCD timer
 //
-//  Created by 羊谦 on 2016/10/27.
+//  Created by 羊谦 on 2016/11/7.
 //  Copyright © 2016年 羊谦. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,14 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];
-    
-    ViewController *vc = [[ViewController alloc] init];
-    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = navi;
-    [self.window makeKeyAndVisible];
-    
+    // Override point for customization after application launch.
     return YES;
 }
 
@@ -55,18 +47,5 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-/**
- 跳转回来
- */
--(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
-    if ([url.absoluteString containsString:@"back"]) {
-        //拿到参数
-        NSRange range = [url.absoluteString rangeOfString:@"?"];
-        NSString *paramStr = [url.absoluteString substringFromIndex:range.location+1];//去除问号
-        NSArray *params = [paramStr componentsSeparatedByString:@"&"];
-        NSLog(@"%@",params);
-    }
-    return YES;
-}
 
 @end
