@@ -20,6 +20,9 @@
     self.title = @"3";
     self.view.backgroundColor = [UIColor grayColor];
     
+    //更改导航栏颜色
+    self.navigationController.navigationBar.barTintColor = [UIColor greenColor];
+    
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn1 setTitle:@"点击直接跳到第一个viewController" forState:UIControlStateNormal];
     btn1.frame = CGRectMake(50, 100, 100, 30);
