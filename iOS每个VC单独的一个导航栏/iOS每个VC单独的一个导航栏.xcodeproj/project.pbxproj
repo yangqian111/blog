@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5614B5491DDD468A00607B88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614B5481DDD468A00607B88 /* main.m */; };
+		5614B54C1DDD468A00607B88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614B54B1DDD468A00607B88 /* AppDelegate.m */; };
+		5614B54F1DDD468A00607B88 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614B54E1DDD468A00607B88 /* ViewController.m */; };
+		5614B5541DDD468A00607B88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5614B5531DDD468A00607B88 /* Assets.xcassets */; };
+		5614B5571DDD468A00607B88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5614B5551DDD468A00607B88 /* LaunchScreen.storyboard */; };
+		5614B5621DDD468A00607B88 /* iOS__VC________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614B5611DDD468A00607B88 /* iOS__VC________Tests.m */; };
+		5614B56D1DDD468A00607B88 /* iOS__VC________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614B56C1DDD468A00607B88 /* iOS__VC________UITests.m */; };
+		5614B57C1DDD4A1800607B88 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614B57B1DDD4A1800607B88 /* ViewController1.m */; };
+		5614B5821DDD4ACA00607B88 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614B5811DDD4ACA00607B88 /* BaseViewController.m */; };
+		5614B5851DDD523D00607B88 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614B5841DDD523D00607B88 /* ViewController3.m */; };
+		5614B58B1DDD6FAB00607B88 /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 5614B58A1DDD6FAB00607B88 /* ViewController4.m */; };
+		C09DE3CED49C745122EFA505 /* libPods-iOS每个VC单独的一个导航栏.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44018F4A9CC782650ACA3FED /* libPods-iOS每个VC单独的一个导航栏.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5614B55E1DDD468A00607B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5614B53C1DDD468A00607B88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5614B5431DDD468A00607B88;
+			remoteInfo = "iOS每个VC单独的一个导航栏";
+		};
+		5614B5691DDD468A00607B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5614B53C1DDD468A00607B88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5614B5431DDD468A00607B88;
+			remoteInfo = "iOS每个VC单独的一个导航栏";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44018F4A9CC782650ACA3FED /* libPods-iOS每个VC单独的一个导航栏.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS每个VC单独的一个导航栏.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5614B5441DDD468A00607B88 /* iOS每个VC单独的一个导航栏.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS每个VC单独的一个导航栏.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5614B5481DDD468A00607B88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5614B54A1DDD468A00607B88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5614B54B1DDD468A00607B88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5614B54D1DDD468A00607B88 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5614B54E1DDD468A00607B88 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5614B5531DDD468A00607B88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5614B5561DDD468A00607B88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5614B5581DDD468A00607B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5614B55D1DDD468A00607B88 /* iOS每个VC单独的一个导航栏Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS每个VC单独的一个导航栏Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5614B5611DDD468A00607B88 /* iOS__VC________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "iOS__VC________Tests.m"; sourceTree = "<group>"; };
+		5614B5631DDD468A00607B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5614B5681DDD468A00607B88 /* iOS每个VC单独的一个导航栏UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS每个VC单独的一个导航栏UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5614B56C1DDD468A00607B88 /* iOS__VC________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "iOS__VC________UITests.m"; sourceTree = "<group>"; };
+		5614B56E1DDD468A00607B88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5614B57A1DDD4A1800607B88 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		5614B57B1DDD4A1800607B88 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		5614B5801DDD4ACA00607B88 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		5614B5811DDD4ACA00607B88 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		5614B5831DDD523D00607B88 /* ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
+		5614B5841DDD523D00607B88 /* ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
+		5614B5891DDD6FAB00607B88 /* ViewController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController4.h; sourceTree = "<group>"; };
+		5614B58A1DDD6FAB00607B88 /* ViewController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController4.m; sourceTree = "<group>"; };
+		A1EA941F1209CAC046E4FC5C /* Pods-iOS每个VC单独的一个导航栏.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS每个VC单独的一个导航栏.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS每个VC单独的一个导航栏/Pods-iOS每个VC单独的一个导航栏.release.xcconfig"; sourceTree = "<group>"; };
+		DD549F6B90455197BD33DAC1 /* Pods-iOS每个VC单独的一个导航栏.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS每个VC单独的一个导航栏.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS每个VC单独的一个导航栏/Pods-iOS每个VC单独的一个导航栏.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5614B5411DDD468A00607B88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09DE3CED49C745122EFA505 /* libPods-iOS每个VC单独的一个导航栏.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5614B55A1DDD468A00607B88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5614B5651DDD468A00607B88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E582098624DC997D179619F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44018F4A9CC782650ACA3FED /* libPods-iOS每个VC单独的一个导航栏.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5614B53B1DDD468A00607B88 = {
+			isa = PBXGroup;
+			children = (
+				5614B5461DDD468A00607B88 /* iOS每个VC单独的一个导航栏 */,
+				5614B5601DDD468A00607B88 /* iOS每个VC单独的一个导航栏Tests */,
+				5614B56B1DDD468A00607B88 /* iOS每个VC单独的一个导航栏UITests */,
+				5614B5451DDD468A00607B88 /* Products */,
+				BAAA1F58AA9B17341001AEB5 /* Pods */,
+				1E582098624DC997D179619F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5614B5451DDD468A00607B88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5614B5441DDD468A00607B88 /* iOS每个VC单独的一个导航栏.app */,
+				5614B55D1DDD468A00607B88 /* iOS每个VC单独的一个导航栏Tests.xctest */,
+				5614B5681DDD468A00607B88 /* iOS每个VC单独的一个导航栏UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5614B5461DDD468A00607B88 /* iOS每个VC单独的一个导航栏 */ = {
+			isa = PBXGroup;
+			children = (
+				5614B54A1DDD468A00607B88 /* AppDelegate.h */,
+				5614B54B1DDD468A00607B88 /* AppDelegate.m */,
+				5614B54D1DDD468A00607B88 /* ViewController.h */,
+				5614B54E1DDD468A00607B88 /* ViewController.m */,
+				5614B5531DDD468A00607B88 /* Assets.xcassets */,
+				5614B5551DDD468A00607B88 /* LaunchScreen.storyboard */,
+				5614B5581DDD468A00607B88 /* Info.plist */,
+				5614B5471DDD468A00607B88 /* Supporting Files */,
+				5614B57A1DDD4A1800607B88 /* ViewController1.h */,
+				5614B57B1DDD4A1800607B88 /* ViewController1.m */,
+				5614B5801DDD4ACA00607B88 /* BaseViewController.h */,
+				5614B5811DDD4ACA00607B88 /* BaseViewController.m */,
+				5614B5831DDD523D00607B88 /* ViewController3.h */,
+				5614B5841DDD523D00607B88 /* ViewController3.m */,
+				5614B5891DDD6FAB00607B88 /* ViewController4.h */,
+				5614B58A1DDD6FAB00607B88 /* ViewController4.m */,
+			);
+			path = "iOS每个VC单独的一个导航栏";
+			sourceTree = "<group>";
+		};
+		5614B5471DDD468A00607B88 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5614B5481DDD468A00607B88 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5614B5601DDD468A00607B88 /* iOS每个VC单独的一个导航栏Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5614B5611DDD468A00607B88 /* iOS__VC________Tests.m */,
+				5614B5631DDD468A00607B88 /* Info.plist */,
+			);
+			path = "iOS每个VC单独的一个导航栏Tests";
+			sourceTree = "<group>";
+		};
+		5614B56B1DDD468A00607B88 /* iOS每个VC单独的一个导航栏UITests */ = {
+			isa = PBXGroup;
+			children = (
+				5614B56C1DDD468A00607B88 /* iOS__VC________UITests.m */,
+				5614B56E1DDD468A00607B88 /* Info.plist */,
+			);
+			path = "iOS每个VC单独的一个导航栏UITests";
+			sourceTree = "<group>";
+		};
+		BAAA1F58AA9B17341001AEB5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD549F6B90455197BD33DAC1 /* Pods-iOS每个VC单独的一个导航栏.debug.xcconfig */,
+				A1EA941F1209CAC046E4FC5C /* Pods-iOS每个VC单独的一个导航栏.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5614B5431DDD468A00607B88 /* iOS每个VC单独的一个导航栏 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5614B5711DDD468A00607B88 /* Build configuration list for PBXNativeTarget "iOS每个VC单独的一个导航栏" */;
+			buildPhases = (
+				3A044CB043E8B6DC1AAB7F18 /* [CP] Check Pods Manifest.lock */,
+				5614B5401DDD468A00607B88 /* Sources */,
+				5614B5411DDD468A00607B88 /* Frameworks */,
+				5614B5421DDD468A00607B88 /* Resources */,
+				2F5F1AD89F190E3649851BCF /* [CP] Embed Pods Frameworks */,
+				9E992654528C79CCDA2671BC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS每个VC单独的一个导航栏";
+			productName = "iOS每个VC单独的一个导航栏";
+			productReference = 5614B5441DDD468A00607B88 /* iOS每个VC单独的一个导航栏.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5614B55C1DDD468A00607B88 /* iOS每个VC单独的一个导航栏Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5614B5741DDD468A00607B88 /* Build configuration list for PBXNativeTarget "iOS每个VC单独的一个导航栏Tests" */;
+			buildPhases = (
+				5614B5591DDD468A00607B88 /* Sources */,
+				5614B55A1DDD468A00607B88 /* Frameworks */,
+				5614B55B1DDD468A00607B88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5614B55F1DDD468A00607B88 /* PBXTargetDependency */,
+			);
+			name = "iOS每个VC单独的一个导航栏Tests";
+			productName = "iOS每个VC单独的一个导航栏Tests";
+			productReference = 5614B55D1DDD468A00607B88 /* iOS每个VC单独的一个导航栏Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5614B5671DDD468A00607B88 /* iOS每个VC单独的一个导航栏UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5614B5771DDD468A00607B88 /* Build configuration list for PBXNativeTarget "iOS每个VC单独的一个导航栏UITests" */;
+			buildPhases = (
+				5614B5641DDD468A00607B88 /* Sources */,
+				5614B5651DDD468A00607B88 /* Frameworks */,
+				5614B5661DDD468A00607B88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5614B56A1DDD468A00607B88 /* PBXTargetDependency */,
+			);
+			name = "iOS每个VC单独的一个导航栏UITests";
+			productName = "iOS每个VC单独的一个导航栏UITests";
+			productReference = 5614B5681DDD468A00607B88 /* iOS每个VC单独的一个导航栏UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5614B53C1DDD468A00607B88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "羊谦";
+				TargetAttributes = {
+					5614B5431DDD468A00607B88 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 46FJ5HKR96;
+						ProvisioningStyle = Automatic;
+					};
+					5614B55C1DDD468A00607B88 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 46FJ5HKR96;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5614B5431DDD468A00607B88;
+					};
+					5614B5671DDD468A00607B88 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 46FJ5HKR96;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5614B5431DDD468A00607B88;
+					};
+				};
+			};
+			buildConfigurationList = 5614B53F1DDD468A00607B88 /* Build configuration list for PBXProject "iOS每个VC单独的一个导航栏" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5614B53B1DDD468A00607B88;
+			productRefGroup = 5614B5451DDD468A00607B88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5614B5431DDD468A00607B88 /* iOS每个VC单独的一个导航栏 */,
+				5614B55C1DDD468A00607B88 /* iOS每个VC单独的一个导航栏Tests */,
+				5614B5671DDD468A00607B88 /* iOS每个VC单独的一个导航栏UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5614B5421DDD468A00607B88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5614B5571DDD468A00607B88 /* LaunchScreen.storyboard in Resources */,
+				5614B5541DDD468A00607B88 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5614B55B1DDD468A00607B88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5614B5661DDD468A00607B88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F5F1AD89F190E3649851BCF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS每个VC单独的一个导航栏/Pods-iOS每个VC单独的一个导航栏-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A044CB043E8B6DC1AAB7F18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E992654528C79CCDA2671BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS每个VC单独的一个导航栏/Pods-iOS每个VC单独的一个导航栏-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5614B5401DDD468A00607B88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5614B54F1DDD468A00607B88 /* ViewController.m in Sources */,
+				5614B5821DDD4ACA00607B88 /* BaseViewController.m in Sources */,
+				5614B5851DDD523D00607B88 /* ViewController3.m in Sources */,
+				5614B57C1DDD4A1800607B88 /* ViewController1.m in Sources */,
+				5614B54C1DDD468A00607B88 /* AppDelegate.m in Sources */,
+				5614B58B1DDD6FAB00607B88 /* ViewController4.m in Sources */,
+				5614B5491DDD468A00607B88 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5614B5591DDD468A00607B88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5614B5621DDD468A00607B88 /* iOS__VC________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5614B5641DDD468A00607B88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5614B56D1DDD468A00607B88 /* iOS__VC________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5614B55F1DDD468A00607B88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5614B5431DDD468A00607B88 /* iOS每个VC单独的一个导航栏 */;
+			targetProxy = 5614B55E1DDD468A00607B88 /* PBXContainerItemProxy */;
+		};
+		5614B56A1DDD468A00607B88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5614B5431DDD468A00607B88 /* iOS每个VC单独的一个导航栏 */;
+			targetProxy = 5614B5691DDD468A00607B88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5614B5551DDD468A00607B88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5614B5561DDD468A00607B88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5614B56F1DDD468A00607B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5614B5701DDD468A00607B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5614B5721DDD468A00607B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD549F6B90455197BD33DAC1 /* Pods-iOS每个VC单独的一个导航栏.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS每个VC单独的一个导航栏/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS--VC--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5614B5731DDD468A00607B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1EA941F1209CAC046E4FC5C /* Pods-iOS每个VC单独的一个导航栏.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS每个VC单独的一个导航栏/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS--VC--------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5614B5751DDD468A00607B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS每个VC单独的一个导航栏Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS--VC--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS每个VC单独的一个导航栏.app/iOS每个VC单独的一个导航栏";
+			};
+			name = Debug;
+		};
+		5614B5761DDD468A00607B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS每个VC单独的一个导航栏Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS--VC--------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS每个VC单独的一个导航栏.app/iOS每个VC单独的一个导航栏";
+			};
+			name = Release;
+		};
+		5614B5781DDD468A00607B88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS每个VC单独的一个导航栏UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS--VC--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "iOS每个VC单独的一个导航栏";
+			};
+			name = Debug;
+		};
+		5614B5791DDD468A00607B88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS每个VC单独的一个导航栏UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS--VC--------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "iOS每个VC单独的一个导航栏";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5614B53F1DDD468A00607B88 /* Build configuration list for PBXProject "iOS每个VC单独的一个导航栏" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5614B56F1DDD468A00607B88 /* Debug */,
+				5614B5701DDD468A00607B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5614B5711DDD468A00607B88 /* Build configuration list for PBXNativeTarget "iOS每个VC单独的一个导航栏" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5614B5721DDD468A00607B88 /* Debug */,
+				5614B5731DDD468A00607B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5614B5741DDD468A00607B88 /* Build configuration list for PBXNativeTarget "iOS每个VC单独的一个导航栏Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5614B5751DDD468A00607B88 /* Debug */,
+				5614B5761DDD468A00607B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5614B5771DDD468A00607B88 /* Build configuration list for PBXNativeTarget "iOS每个VC单独的一个导航栏UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5614B5781DDD468A00607B88 /* Debug */,
+				5614B5791DDD468A00607B88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5614B53C1DDD468A00607B88 /* Project object */;
+}

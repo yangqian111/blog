@@ -1,0 +1,12 @@
+
+workspace ‘iOS每个VC单独的一个导航栏.xcworkspace’
+
+project ‘iOS每个VC单独的一个导航栏.xcodeproj’
+
+platform :ios, '8.0'
+
+target 'iOS每个VC单独的一个导航栏' do 
+
+pod ‘RTRootNavigationController’
+
+end
