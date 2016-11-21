@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		564CCE8D1DE052DD0018AE50 /* KeyValueObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 564CCE8C1DE052DD0018AE50 /* KeyValueObserver.m */; };
+		56D209461DE0436600192531 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D209451DE0436600192531 /* main.m */; };
+		56D209491DE0436600192531 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D209481DE0436600192531 /* AppDelegate.m */; };
+		56D2094C1DE0436600192531 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D2094B1DE0436600192531 /* ViewController.m */; };
+		56D2094F1DE0436600192531 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D2094D1DE0436600192531 /* Main.storyboard */; };
+		56D209511DE0436600192531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D209501DE0436600192531 /* Assets.xcassets */; };
+		56D209541DE0436600192531 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D209521DE0436600192531 /* LaunchScreen.storyboard */; };
+		56D2095F1DE0436600192531 /* iOS_KVC_KVOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D2095E1DE0436600192531 /* iOS_KVC_KVOTests.m */; };
+		56D2096A1DE0436600192531 /* iOS_KVC_KVOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D209691DE0436600192531 /* iOS_KVC_KVOUITests.m */; };
+		56D209791DE0440000192531 /* LabColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D209781DE0440000192531 /* LabColor.m */; };
+		56D2097C1DE0449B00192531 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D2097B1DE0449B00192531 /* UIKit.framework */; };
+		56ECD59C1DE058680017789C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56ECD59B1DE058680017789C /* CoreGraphics.framework */; };
+		56ECD59E1DE0586F0017789C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56ECD59D1DE0586F0017789C /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56D2095B1DE0436600192531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56D209391DE0436600192531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56D209401DE0436600192531;
+			remoteInfo = "iOS KVC和KVO";
+		};
+		56D209661DE0436600192531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56D209391DE0436600192531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56D209401DE0436600192531;
+			remoteInfo = "iOS KVC和KVO";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		564CCE8B1DE052DD0018AE50 /* KeyValueObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValueObserver.h; sourceTree = "<group>"; };
+		564CCE8C1DE052DD0018AE50 /* KeyValueObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueObserver.m; sourceTree = "<group>"; };
+		56D209411DE0436600192531 /* iOS KVC和KVO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS KVC和KVO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D209451DE0436600192531 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56D209471DE0436600192531 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		56D209481DE0436600192531 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		56D2094A1DE0436600192531 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		56D2094B1DE0436600192531 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		56D2094E1DE0436600192531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56D209501DE0436600192531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		56D209531DE0436600192531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		56D209551DE0436600192531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56D2095A1DE0436600192531 /* iOS KVC和KVOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS KVC和KVOTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D2095E1DE0436600192531 /* iOS_KVC_KVOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_KVC_KVOTests.m; sourceTree = "<group>"; };
+		56D209601DE0436600192531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56D209651DE0436600192531 /* iOS KVC和KVOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS KVC和KVOUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D209691DE0436600192531 /* iOS_KVC_KVOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_KVC_KVOUITests.m; sourceTree = "<group>"; };
+		56D2096B1DE0436600192531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56D209771DE0440000192531 /* LabColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabColor.h; sourceTree = "<group>"; };
+		56D209781DE0440000192531 /* LabColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabColor.m; sourceTree = "<group>"; };
+		56D2097B1DE0449B00192531 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		56ECD59B1DE058680017789C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		56ECD59D1DE0586F0017789C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56D2093E1DE0436600192531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56ECD59E1DE0586F0017789C /* Foundation.framework in Frameworks */,
+				56ECD59C1DE058680017789C /* CoreGraphics.framework in Frameworks */,
+				56D2097C1DE0449B00192531 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D209571DE0436600192531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D209621DE0436600192531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56D209381DE0436600192531 = {
+			isa = PBXGroup;
+			children = (
+				56D209431DE0436600192531 /* iOS KVC和KVO */,
+				56D2095D1DE0436600192531 /* iOS KVC和KVOTests */,
+				56D209681DE0436600192531 /* iOS KVC和KVOUITests */,
+				56D209421DE0436600192531 /* Products */,
+				56D2097A1DE0449B00192531 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		56D209421DE0436600192531 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56D209411DE0436600192531 /* iOS KVC和KVO.app */,
+				56D2095A1DE0436600192531 /* iOS KVC和KVOTests.xctest */,
+				56D209651DE0436600192531 /* iOS KVC和KVOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56D209431DE0436600192531 /* iOS KVC和KVO */ = {
+			isa = PBXGroup;
+			children = (
+				56D209471DE0436600192531 /* AppDelegate.h */,
+				56D209481DE0436600192531 /* AppDelegate.m */,
+				56D2094A1DE0436600192531 /* ViewController.h */,
+				56D2094B1DE0436600192531 /* ViewController.m */,
+				56D2094D1DE0436600192531 /* Main.storyboard */,
+				56D209501DE0436600192531 /* Assets.xcassets */,
+				56D209521DE0436600192531 /* LaunchScreen.storyboard */,
+				56D209551DE0436600192531 /* Info.plist */,
+				56D209441DE0436600192531 /* Supporting Files */,
+				56D209771DE0440000192531 /* LabColor.h */,
+				56D209781DE0440000192531 /* LabColor.m */,
+				564CCE8B1DE052DD0018AE50 /* KeyValueObserver.h */,
+				564CCE8C1DE052DD0018AE50 /* KeyValueObserver.m */,
+			);
+			path = "iOS KVC和KVO";
+			sourceTree = "<group>";
+		};
+		56D209441DE0436600192531 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56D209451DE0436600192531 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56D2095D1DE0436600192531 /* iOS KVC和KVOTests */ = {
+			isa = PBXGroup;
+			children = (
+				56D2095E1DE0436600192531 /* iOS_KVC_KVOTests.m */,
+				56D209601DE0436600192531 /* Info.plist */,
+			);
+			path = "iOS KVC和KVOTests";
+			sourceTree = "<group>";
+		};
+		56D209681DE0436600192531 /* iOS KVC和KVOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				56D209691DE0436600192531 /* iOS_KVC_KVOUITests.m */,
+				56D2096B1DE0436600192531 /* Info.plist */,
+			);
+			path = "iOS KVC和KVOUITests";
+			sourceTree = "<group>";
+		};
+		56D2097A1DE0449B00192531 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56ECD59D1DE0586F0017789C /* Foundation.framework */,
+				56ECD59B1DE058680017789C /* CoreGraphics.framework */,
+				56D2097B1DE0449B00192531 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56D209401DE0436600192531 /* iOS KVC和KVO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D2096E1DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVO" */;
+			buildPhases = (
+				56D2093D1DE0436600192531 /* Sources */,
+				56D2093E1DE0436600192531 /* Frameworks */,
+				56D2093F1DE0436600192531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS KVC和KVO";
+			productName = "iOS KVC和KVO";
+			productReference = 56D209411DE0436600192531 /* iOS KVC和KVO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		56D209591DE0436600192531 /* iOS KVC和KVOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D209711DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVOTests" */;
+			buildPhases = (
+				56D209561DE0436600192531 /* Sources */,
+				56D209571DE0436600192531 /* Frameworks */,
+				56D209581DE0436600192531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56D2095C1DE0436600192531 /* PBXTargetDependency */,
+			);
+			name = "iOS KVC和KVOTests";
+			productName = "iOS KVC和KVOTests";
+			productReference = 56D2095A1DE0436600192531 /* iOS KVC和KVOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		56D209641DE0436600192531 /* iOS KVC和KVOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D209741DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVOUITests" */;
+			buildPhases = (
+				56D209611DE0436600192531 /* Sources */,
+				56D209621DE0436600192531 /* Frameworks */,
+				56D209631DE0436600192531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				56D209671DE0436600192531 /* PBXTargetDependency */,
+			);
+			name = "iOS KVC和KVOUITests";
+			productName = "iOS KVC和KVOUITests";
+			productReference = 56D209651DE0436600192531 /* iOS KVC和KVOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56D209391DE0436600192531 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "羊谦";
+				TargetAttributes = {
+					56D209401DE0436600192531 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 46FJ5HKR96;
+						ProvisioningStyle = Automatic;
+					};
+					56D209591DE0436600192531 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 46FJ5HKR96;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 56D209401DE0436600192531;
+					};
+					56D209641DE0436600192531 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 46FJ5HKR96;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 56D209401DE0436600192531;
+					};
+				};
+			};
+			buildConfigurationList = 56D2093C1DE0436600192531 /* Build configuration list for PBXProject "iOS KVC和KVO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56D209381DE0436600192531;
+			productRefGroup = 56D209421DE0436600192531 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				56D209401DE0436600192531 /* iOS KVC和KVO */,
+				56D209591DE0436600192531 /* iOS KVC和KVOTests */,
+				56D209641DE0436600192531 /* iOS KVC和KVOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56D2093F1DE0436600192531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D209541DE0436600192531 /* LaunchScreen.storyboard in Resources */,
+				56D209511DE0436600192531 /* Assets.xcassets in Resources */,
+				56D2094F1DE0436600192531 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D209581DE0436600192531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D209631DE0436600192531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56D2093D1DE0436600192531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564CCE8D1DE052DD0018AE50 /* KeyValueObserver.m in Sources */,
+				56D2094C1DE0436600192531 /* ViewController.m in Sources */,
+				56D209491DE0436600192531 /* AppDelegate.m in Sources */,
+				56D209461DE0436600192531 /* main.m in Sources */,
+				56D209791DE0440000192531 /* LabColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D209561DE0436600192531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D2095F1DE0436600192531 /* iOS_KVC_KVOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D209611DE0436600192531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56D2096A1DE0436600192531 /* iOS_KVC_KVOUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56D2095C1DE0436600192531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56D209401DE0436600192531 /* iOS KVC和KVO */;
+			targetProxy = 56D2095B1DE0436600192531 /* PBXContainerItemProxy */;
+		};
+		56D209671DE0436600192531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56D209401DE0436600192531 /* iOS KVC和KVO */;
+			targetProxy = 56D209661DE0436600192531 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56D2094D1DE0436600192531 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56D2094E1DE0436600192531 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		56D209521DE0436600192531 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56D209531DE0436600192531 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56D2096C1DE0436600192531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		56D2096D1DE0436600192531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56D2096F1DE0436600192531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS KVC和KVO/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS-KVC-KVO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		56D209701DE0436600192531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS KVC和KVO/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS-KVC-KVO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		56D209721DE0436600192531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS KVC和KVOTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS-KVC-KVOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS KVC和KVO.app/iOS KVC和KVO";
+			};
+			name = Debug;
+		};
+		56D209731DE0436600192531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS KVC和KVOTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS-KVC-KVOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS KVC和KVO.app/iOS KVC和KVO";
+			};
+			name = Release;
+		};
+		56D209751DE0436600192531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS KVC和KVOUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS-KVC-KVOUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "iOS KVC和KVO";
+			};
+			name = Debug;
+		};
+		56D209761DE0436600192531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 46FJ5HKR96;
+				INFOPLIST_FILE = "iOS KVC和KVOUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS-KVC-KVOUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "iOS KVC和KVO";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56D2093C1DE0436600192531 /* Build configuration list for PBXProject "iOS KVC和KVO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D2096C1DE0436600192531 /* Debug */,
+				56D2096D1DE0436600192531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D2096E1DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D2096F1DE0436600192531 /* Debug */,
+				56D209701DE0436600192531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D209711DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D209721DE0436600192531 /* Debug */,
+				56D209731DE0436600192531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56D209741DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56D209751DE0436600192531 /* Debug */,
+				56D209761DE0436600192531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56D209391DE0436600192531 /* Project object */;
+}
