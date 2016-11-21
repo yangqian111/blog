@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		564CCE8B1DE052DD0018AE50 /* KeyValueObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValueObserver.h; sourceTree = "<group>"; };
 		564CCE8C1DE052DD0018AE50 /* KeyValueObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueObserver.m; sourceTree = "<group>"; };
-		56D209411DE0436600192531 /* iOS KVC和KVO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS KVC和KVO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D209411DE0436600192531 /* iOS KVC和KVO(一).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS KVC和KVO(一).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D209451DE0436600192531 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56D209471DE0436600192531 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		56D209481DE0436600192531 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,10 +52,10 @@
 		56D209501DE0436600192531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56D209531DE0436600192531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56D209551DE0436600192531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56D2095A1DE0436600192531 /* iOS KVC和KVOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS KVC和KVOTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D2095A1DE0436600192531 /* iOS KVC和KVO(一)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS KVC和KVO(一)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D2095E1DE0436600192531 /* iOS_KVC_KVOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_KVC_KVOTests.m; sourceTree = "<group>"; };
 		56D209601DE0436600192531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56D209651DE0436600192531 /* iOS KVC和KVOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS KVC和KVOUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56D209651DE0436600192531 /* iOS KVC和KVO(一)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS KVC和KVO(一)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D209691DE0436600192531 /* iOS_KVC_KVOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_KVC_KVOUITests.m; sourceTree = "<group>"; };
 		56D2096B1DE0436600192531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56D209771DE0440000192531 /* LabColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabColor.h; sourceTree = "<group>"; };
@@ -107,9 +107,9 @@
 		56D209421DE0436600192531 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				56D209411DE0436600192531 /* iOS KVC和KVO.app */,
-				56D2095A1DE0436600192531 /* iOS KVC和KVOTests.xctest */,
-				56D209651DE0436600192531 /* iOS KVC和KVOUITests.xctest */,
+				56D209411DE0436600192531 /* iOS KVC和KVO(一).app */,
+				56D2095A1DE0436600192531 /* iOS KVC和KVO(一)Tests.xctest */,
+				56D209651DE0436600192531 /* iOS KVC和KVO(一)UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,9 +173,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		56D209401DE0436600192531 /* iOS KVC和KVO */ = {
+		56D209401DE0436600192531 /* iOS KVC和KVO(一) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56D2096E1DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVO" */;
+			buildConfigurationList = 56D2096E1DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVO(一)" */;
 			buildPhases = (
 				56D2093D1DE0436600192531 /* Sources */,
 				56D2093E1DE0436600192531 /* Frameworks */,
@@ -185,14 +185,14 @@
 			);
 			dependencies = (
 			);
-			name = "iOS KVC和KVO";
+			name = "iOS KVC和KVO(一)";
 			productName = "iOS KVC和KVO";
-			productReference = 56D209411DE0436600192531 /* iOS KVC和KVO.app */;
+			productReference = 56D209411DE0436600192531 /* iOS KVC和KVO(一).app */;
 			productType = "com.apple.product-type.application";
 		};
-		56D209591DE0436600192531 /* iOS KVC和KVOTests */ = {
+		56D209591DE0436600192531 /* iOS KVC和KVO(一)Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56D209711DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVOTests" */;
+			buildConfigurationList = 56D209711DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVO(一)Tests" */;
 			buildPhases = (
 				56D209561DE0436600192531 /* Sources */,
 				56D209571DE0436600192531 /* Frameworks */,
@@ -203,14 +203,14 @@
 			dependencies = (
 				56D2095C1DE0436600192531 /* PBXTargetDependency */,
 			);
-			name = "iOS KVC和KVOTests";
+			name = "iOS KVC和KVO(一)Tests";
 			productName = "iOS KVC和KVOTests";
-			productReference = 56D2095A1DE0436600192531 /* iOS KVC和KVOTests.xctest */;
+			productReference = 56D2095A1DE0436600192531 /* iOS KVC和KVO(一)Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		56D209641DE0436600192531 /* iOS KVC和KVOUITests */ = {
+		56D209641DE0436600192531 /* iOS KVC和KVO(一)UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56D209741DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVOUITests" */;
+			buildConfigurationList = 56D209741DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVO(一)UITests" */;
 			buildPhases = (
 				56D209611DE0436600192531 /* Sources */,
 				56D209621DE0436600192531 /* Frameworks */,
@@ -221,9 +221,9 @@
 			dependencies = (
 				56D209671DE0436600192531 /* PBXTargetDependency */,
 			);
-			name = "iOS KVC和KVOUITests";
+			name = "iOS KVC和KVO(一)UITests";
 			productName = "iOS KVC和KVOUITests";
-			productReference = 56D209651DE0436600192531 /* iOS KVC和KVOUITests.xctest */;
+			productReference = 56D209651DE0436600192531 /* iOS KVC和KVO(一)UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -255,7 +255,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 56D2093C1DE0436600192531 /* Build configuration list for PBXProject "iOS KVC和KVO" */;
+			buildConfigurationList = 56D2093C1DE0436600192531 /* Build configuration list for PBXProject "iOS KVC和KVO(一)" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -268,9 +268,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				56D209401DE0436600192531 /* iOS KVC和KVO */,
-				56D209591DE0436600192531 /* iOS KVC和KVOTests */,
-				56D209641DE0436600192531 /* iOS KVC和KVOUITests */,
+				56D209401DE0436600192531 /* iOS KVC和KVO(一) */,
+				56D209591DE0436600192531 /* iOS KVC和KVO(一)Tests */,
+				56D209641DE0436600192531 /* iOS KVC和KVO(一)UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -336,12 +336,12 @@
 /* Begin PBXTargetDependency section */
 		56D2095C1DE0436600192531 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 56D209401DE0436600192531 /* iOS KVC和KVO */;
+			target = 56D209401DE0436600192531 /* iOS KVC和KVO(一) */;
 			targetProxy = 56D2095B1DE0436600192531 /* PBXContainerItemProxy */;
 		};
 		56D209671DE0436600192531 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 56D209401DE0436600192531 /* iOS KVC和KVO */;
+			target = 56D209401DE0436600192531 /* iOS KVC和KVO(一) */;
 			targetProxy = 56D209661DE0436600192531 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -489,7 +489,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS-KVC-KVOTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS KVC和KVO.app/iOS KVC和KVO";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS KVC和KVO(一).app/iOS KVC和KVO(一)";
 			};
 			name = Debug;
 		};
@@ -502,7 +502,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yangqian.iOS-KVC-KVOTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS KVC和KVO.app/iOS KVC和KVO";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS KVC和KVO(一).app/iOS KVC和KVO(一)";
 			};
 			name = Release;
 		};
@@ -533,7 +533,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		56D2093C1DE0436600192531 /* Build configuration list for PBXProject "iOS KVC和KVO" */ = {
+		56D2093C1DE0436600192531 /* Build configuration list for PBXProject "iOS KVC和KVO(一)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56D2096C1DE0436600192531 /* Debug */,
@@ -542,7 +542,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56D2096E1DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVO" */ = {
+		56D2096E1DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVO(一)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56D2096F1DE0436600192531 /* Debug */,
@@ -551,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56D209711DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVOTests" */ = {
+		56D209711DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVO(一)Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56D209721DE0436600192531 /* Debug */,
@@ -560,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56D209741DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVOUITests" */ = {
+		56D209741DE0436600192531 /* Build configuration list for PBXNativeTarget "iOS KVC和KVO(一)UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56D209751DE0436600192531 /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "56D209401DE0436600192531"
-               BuildableName = "iOS KVC&#x548c;KVO.app"
-               BlueprintName = "iOS KVC&#x548c;KVO"
-               ReferencedContainer = "container:iOS KVC&#x548c;KVO.xcodeproj">
+               BuildableName = "iOS KVC&#x548c;KVO(&#x4e00;).app"
+               BlueprintName = "iOS KVC&#x548c;KVO(&#x4e00;)"
+               ReferencedContainer = "container:iOS KVC&#x548c;KVO(&#x4e00;).xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "56D209591DE0436600192531"
-               BuildableName = "iOS KVC&#x548c;KVOTests.xctest"
-               BlueprintName = "iOS KVC&#x548c;KVOTests"
-               ReferencedContainer = "container:iOS KVC&#x548c;KVO.xcodeproj">
+               BuildableName = "iOS KVC&#x548c;KVO(&#x4e00;)Tests.xctest"
+               BlueprintName = "iOS KVC&#x548c;KVO(&#x4e00;)Tests"
+               ReferencedContainer = "container:iOS KVC&#x548c;KVO(&#x4e00;).xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "56D209641DE0436600192531"
-               BuildableName = "iOS KVC&#x548c;KVOUITests.xctest"
-               BlueprintName = "iOS KVC&#x548c;KVOUITests"
-               ReferencedContainer = "container:iOS KVC&#x548c;KVO.xcodeproj">
+               BuildableName = "iOS KVC&#x548c;KVO(&#x4e00;)UITests.xctest"
+               BlueprintName = "iOS KVC&#x548c;KVO(&#x4e00;)UITests"
+               ReferencedContainer = "container:iOS KVC&#x548c;KVO(&#x4e00;).xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "56D209401DE0436600192531"
-            BuildableName = "iOS KVC&#x548c;KVO.app"
-            BlueprintName = "iOS KVC&#x548c;KVO"
-            ReferencedContainer = "container:iOS KVC&#x548c;KVO.xcodeproj">
+            BuildableName = "iOS KVC&#x548c;KVO(&#x4e00;).app"
+            BlueprintName = "iOS KVC&#x548c;KVO(&#x4e00;)"
+            ReferencedContainer = "container:iOS KVC&#x548c;KVO(&#x4e00;).xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "56D209401DE0436600192531"
-            BuildableName = "iOS KVC&#x548c;KVO.app"
-            BlueprintName = "iOS KVC&#x548c;KVO"
-            ReferencedContainer = "container:iOS KVC&#x548c;KVO.xcodeproj">
+            BuildableName = "iOS KVC&#x548c;KVO(&#x4e00;).app"
+            BlueprintName = "iOS KVC&#x548c;KVO(&#x4e00;)"
+            ReferencedContainer = "container:iOS KVC&#x548c;KVO(&#x4e00;).xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "56D209401DE0436600192531"
-            BuildableName = "iOS KVC&#x548c;KVO.app"
-            BlueprintName = "iOS KVC&#x548c;KVO"
-            ReferencedContainer = "container:iOS KVC&#x548c;KVO.xcodeproj">
+            BuildableName = "iOS KVC&#x548c;KVO(&#x4e00;).app"
+            BlueprintName = "iOS KVC&#x548c;KVO(&#x4e00;)"
+            ReferencedContainer = "container:iOS KVC&#x548c;KVO(&#x4e00;).xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
