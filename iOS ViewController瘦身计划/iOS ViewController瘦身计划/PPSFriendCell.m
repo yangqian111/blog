@@ -18,7 +18,16 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
+}
+
+//瘦身计划二部分
+-(void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated{
+    [super setHighlighted:highlighted animated:animated];
+    if (highlighted) {
+        //高亮时改变cell的状态
+    }else{
+        //非高亮时改变
+    }
 }
 
 @end
